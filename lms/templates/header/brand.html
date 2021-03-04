@@ -15,8 +15,8 @@ from branding import api as branding_api
 <h1 class="hd logo-header navbar-brand">
   <div class="logo">
     <a class="navbar-brand" href="${branding_api.get_home_url()}" itemprop="url">
-      ## mcdaniel july-2020: point F1tenth logo to the file in the CDN.
-      <img id="f1tenth_logo" class="logo-image" src="https://cdn.academiacentral.org/logo.png" alt="${_("{platform_name} Home Page").format(platform_name=static.get_platform_name())}" itemprop="logo" />
+      ## mcdaniel march-2021: point F1tenth logo to the file in the CDN.
+      <img id="academiacentral_logo" class="logo-image" src="https://cdn.academiacentral.org/logo.png" alt="${_("{platform_name} Home Page").format(platform_name=static.get_platform_name())}" itemprop="logo" />
     </a>
   </div>
   % if course and not disable_courseware_header:

@@ -84,7 +84,7 @@ from pipeline_mako import render_require_js_path_overrides
   <script type="text/javascript" src="${static.url(ie11_fix_path)}"></script>
 
   ##<link rel="icon" type="image/x-icon" href="${static.url(static.get_value('favicon_path', settings.FAVICON_PATH))}" />
-  <link rel="icon" type="image/x-icon" href="https://f1tenth.org/logo.ico" />
+  <link rel="icon" type="image/x-icon" href="https://cdn.academiacentral.org/logo.png" />
 
   <%static:css group='style-vendor'/>
   % if '/' in self.attr.main_css:
@@ -169,9 +169,9 @@ from pipeline_mako import render_require_js_path_overrides
     </script>
 % endif
 
-## mcdaniel july-2020: add inline custom styling
+## mcdaniel march-2021: add inline custom styling
 <style>
-  #f1tenth_logo {
+  #academiacentral_logo {
     width: 72;
   }
 </style>

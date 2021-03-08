@@ -19,6 +19,40 @@ course_mode_class = course_mode if course_mode else ''
     <title>${document_title}</title>
 
     <%static:css group='style-certificates'/>
+
+    ##------------------------------------------------------------------
+    ## mcdaniel mar-2021
+    ##
+    ## Styling overrides for USF certificates. Add your CSS styling 
+    ## changes here in order for changes to take effect immediately
+    ## after re-installing edx-theme. otherwise, if you follow the
+    ## traditional theming / styling guidelines then you'll need to 
+    ## recompile static assets in order to transpile your SASS into 
+    ## CSS.
+    ##------------------------------------------------------------------
+    <style>
+        /*
+            _accomplishment-header.html 
+            to override the standard logo styling, which we've
+            replaced with a full-width image containing a centered logo
+            and college title text. 
+
+         */
+        .usf-logo {
+            text-align: center;            
+        }
+
+        /*
+            _accomplishment-rendering.html
+            to override the styling of the faculty signatures image
+            which is a full page width single image containing all 
+            three signature blocks
+        */
+        .usf-certificate-signatures {
+            text-align: center;
+        }
+
+    </style>
 </head>
 
 <body class="layout-accomplishment view-valid-accomplishment ${dir_rtl} certificate certificate-${course_mode_class}" data-view="valid-accomplishment">

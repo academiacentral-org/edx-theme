@@ -3,6 +3,21 @@
 {% load static %}
 
 {% block navbar_brand %}
+    <style>
+        .navbar {
+        border-bottom: 4px solid gray !Important;
+        }
+        .navbar-brand .navbar-brand-logo {
+        width: auto !Important;
+        }
+        .usf-logo {
+        transition: none !Important;
+        }
+        .usf-logo:hover {
+        border-bottom: none !Important;
+        }
+    </style>
+
     {% if admin == "course" %}
         <a class="navbar-brand" href="{% url 'courses:app' '' %}">
             <img class="navbar-brand-logo" alt="{{ platform_name }} logo" src="https://cdn.academiacentral.org/"/>

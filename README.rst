@@ -6,6 +6,7 @@ mooc.academiacentral.org
 
 This is the custom theme for the Open edX platform `mooc.academiacentral.org <https://mooc.academiacentral.org>`_.
 For more information on the structure of this repository please see:
+
 .. _Open edX Custom Theming Tutorial: https://blog.lawrencemcdaniel.com/open-edx-custom-theming-tutorial/
 .. _Open edX Official Custom Theming Documentation: https://edx.readthedocs.io/projects/edx-installing-configuring-and-running/en/latest/configuration/changing_appearance/theming/create_theme.html
 
@@ -30,6 +31,7 @@ same folder location on the edxapp server on which this cron job is running. The
 executes one of these bash scripts, edx.platform-autostart.out, that in turn calls any other scripts
 that should execute during reboots. These typically inclue edx.install-config.sh and edx.install-theme.sh
 but others could be added for patch and mainentance purposes.
+
 .. code-block:: bash
 
     @reboot /home/ubuntu/edx.install-scripts.sh > /home/ubuntu/edx.install-scripts.out

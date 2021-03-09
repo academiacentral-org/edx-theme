@@ -14,8 +14,6 @@ Note that this repository is private and therefore requires the use of Deploymen
 For more information about adding / modifying GitHub deployment keys see `Generating a new SSH key and adding it to the ssh-agent <https://docs.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent>`_.
 Deployment keys are typically created inside the .ssh folder of the destination Linux server.
 
-**The configuration files for the original Bitnami Open edX platform are also archived in this repository. These files are for reference purposes only.**
-
 Usage
 -----
 This repository is automatically cloned to edxapp servers during reboots / startups. 

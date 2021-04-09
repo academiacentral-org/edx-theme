@@ -42,5 +42,5 @@ Making Changes to the Open edX Theme
 html files located in folders named "template" are Django Mako template files that are interpretted at run time. It is not necessary to restart the Open edX when modifying these files.
 Any files located in "static" require both Asset Compilation as well as a restart of the Open edX application (LMS, CMS, Ecommerce) in which they are stored.
 
-As a highly-preferred alternative to hosting static assets on the edxapp servers you are encouraged instead to leverage the CDN located at `s3://cdn.academiacentral.org <https://s3.console.aws.amazon.com/s3/buckets/cdn.academiacentral.org?region=us-east-1&tab=objects>`_.
+As a highly-preferred alternative to hosting static assets on the edxapp servers you are encouraged instead to leverage the CDN located at `s3://mooc.academiacentral.org <https://s3.console.aws.amazon.com/s3/buckets/mooc.academiacentral.org?region=us-east-1&tab=objects>`_.
 Files stored to the CDN become available immediately and require neither Asset Compilation nor a restart of the Open edX platform.

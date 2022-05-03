@@ -3,7 +3,7 @@
 <%!
   from django.urls import reverse
   from django.utils.translation import ugettext as _
-  from branding.api import get_footer
+  from lms.djangoapps.branding.api import get_footer
   from openedx.core.djangoapps.lang_pref.api import footer_language_selector_is_enabled
 %>
 <% footer = get_footer(is_secure=is_secure) %>
@@ -28,6 +28,16 @@
 
           <div class="wrapper-logo">
             <p>
+              <a href="/">
+                ## The default logo is a placeholder.
+                ## You can either replace this link entirely or update
+                ## the FOOTER_ORGANIZATION_IMAGE in Django settings.
+                ## If you customize FOOTER_ORGANIZATION_IMAGE, then the image
+                ## can be included in the footer on other sites
+                ## (e.g. a blog or marketing front-end) to provide a consistent
+                ## user experience.  See the branding app for details.
+                <img alt="${_('organization logo')}" src="${footer['logo_image']}">
+              </a>
             </p>
           </div>
 
@@ -94,6 +104,16 @@
 
         <div class="wrapper-logo">
           <p>
+            <a href="/">
+              ## The default logo is a placeholder.
+              ## You can either replace this link entirely or update
+              ## the FOOTER_ORGANIZATION_IMAGE in Django settings.
+              ## If you customize FOOTER_ORGANIZATION_IMAGE, then the image
+              ## can be included in the footer on other sites
+              ## (e.g. a blog or marketing front-end) to provide a consistent
+              ## user experience.  See the branding app for details.
+              <img alt="${_('organization logo')}" src="${footer['logo_image']}">
+            </a>
           </p>
         </div>
 

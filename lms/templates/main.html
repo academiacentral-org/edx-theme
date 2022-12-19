@@ -210,6 +210,15 @@ from common.djangoapps.pipeline_mako import render_require_js_path_overrides
     twq('config','od23i');
   </script>
   <!-- End Twitter conversion tracking base code -->
+  ## mcdaniel dec-2022: add additional tracking codes - Twitter Event Code
+  <!-- Twitter conversion tracking event code -->
+  <script type="text/javascript">
+    // Insert Twitter Event ID
+    twq('event', 'tw-od23i-od7c9', {
+      status: null // use this to pass the status of a sign up or subscription, (e.g. 'started' or 'completed')
+    });
+  </script>
+  <!-- End Twitter conversion tracking event code -->
 
 <% ga_acct = static.get_value("GOOGLE_ANALYTICS_ACCOUNT", settings.GOOGLE_ANALYTICS_ACCOUNT) %>
 % if ga_acct:

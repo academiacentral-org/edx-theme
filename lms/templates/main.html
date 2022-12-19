@@ -210,7 +210,15 @@ src="https://www.facebook.com/tr?id=1843420199350827&ev=PageView&noscript=1"
   twq('config','od23i');
 </script>
 <!-- End Twitter conversion tracking base code -->
-
+## mcdaniel dec-2022: add additional Twitter Event Tracking Code
+<!-- Twitter conversion tracking event code -->
+<script type="text/javascript">
+  // Insert Twitter Event ID
+  twq('event', 'tw-od23i-od7c9', {
+    status: null // use this to pass the status of a sign up or subscription, (e.g. 'started' or 'completed')
+  });
+</script>
+<!-- End Twitter conversion tracking event code -->
 <% branch_key = static.get_value("BRANCH_IO_KEY", settings.BRANCH_IO_KEY) %>
 % if branch_key and not is_from_mobile_app:
     <script type="text/javascript">
